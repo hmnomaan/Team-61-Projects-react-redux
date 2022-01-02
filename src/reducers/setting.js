@@ -1,33 +1,23 @@
 import {
-    ARTICLE_PAGE_LOADED,
-    ARTICLE_PAGE_UNLOADED,
-    ADD_COMMENT,
-    DELETE_COMMENT
+    SETTINGS_SAVED,
+    SETTINGS_PAGE_UNLOADED,
+    ASYNC_START
 } from '../constants/actionTypes';
 
 export default (state = {}, action) => {
     switch (action.type) {
-        case ARTICLE_PAGE_LOADED:
+        case SETTINGS_SAVED:
             return {
                 ...state,
-                article: action.payload[0].article,
-                comments: action.payload[1].comments
+                inProgress: false,
+                errors: action.error ? action.payload.errors : null
             };
-        case ARTICLE_PAGE_UNLOADED:
+        case SETTINGS_PAGE_UNLOADED:
             return {};
-        case ADD_COMMENT:
+        case ASYNC_START:
             return {
                 ...state,
-                commentErrors: action.error ? action.payload.errors : null,
-                comments: action.error ?
-                    null :
-                    (state.comments || []).concat([action.payload.comment])
-            };
-        case DELETE_COMMENT:
-            const commentId = action.commentId
-            return {
-                ...state,
-                comments: state.comments.filter(comment => comment.id !== commentId)
+                inProgress: true
             };
         default:
             return state;

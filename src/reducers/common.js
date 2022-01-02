@@ -20,7 +20,7 @@ import {
 
 
 const defaultState = {
-    appName: 'Conduit',
+    appName: 'TeamProject NewsFeed',
     token: null,
     viewChangeCounter: 0
 };

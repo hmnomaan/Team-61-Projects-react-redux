@@ -1,4 +1,10 @@
 ### Projects Overview
+GitHub Code Link-https://github.com/rahmancoder/Team-61-Projects-react-redux
+
+Live Website Link-https://priceless-goldberg-2da1c6.netlify.app/
+
+Presentation SLide Link-https://docs.google.com/presentation/d/1du8MI7wV7dSenfbfRmGz7zQQRNkceAQ4oU0vIt_DpX0/edit?usp=sharing
+
 We have Tried to implement Redux on our React project using Redux Tool kits. We are two persons who were committed in the entire project. We have made a project which is a dynamic Blog site . Where user can submit the article using mail and password. User also register by the help of Redux thunks. We have implemented the whole project in a agile life cycle using several sprint meeting. We have reviewed the final code. All the essential link and proofs are given on this slide.
 ![image](https://user-images.githubusercontent.com/58332260/148094044-1346d7bc-bd43-4756-b97b-4178a7083a7b.png)
 ![image](https://user-images.githubusercontent.com/58332260/148094074-85bc8506-6918-4582-9aa5-2ca8abd1b4a7.png)

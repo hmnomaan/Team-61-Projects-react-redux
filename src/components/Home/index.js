@@ -10,6 +10,7 @@ import {
     APPLY_TAG_FILTER
 } from '../../constants/actionTypes';
 import About from './About';
+// import Footer from './Footer';
 
 const Promise = global.Promise;
 
@@ -61,6 +62,8 @@ class Home extends React.Component {
                                 <Tags
                                     tags={this.props.tags}
                                     onClickTag={this.props.onClickTag} />
+
+                                {/* <Footer /> */}
 
                             </div>
                         </div>

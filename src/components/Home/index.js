@@ -9,6 +9,7 @@ import {
     HOME_PAGE_UNLOADED,
     APPLY_TAG_FILTER
 } from '../../constants/actionTypes';
+import About from './About';
 
 const Promise = global.Promise;
 
@@ -49,6 +50,7 @@ class Home extends React.Component {
 
                 <div className="container page">
                     <div className="row">
+                        <About />
                         <MainView />
 
                         <div className="col-md-3">

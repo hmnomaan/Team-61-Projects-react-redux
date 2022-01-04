@@ -15,7 +15,7 @@ import ProfileFavorites from '../components/ProfileFavorites';
 import Register from '../components/Register';
 import Settings from '../components/Settings';
 import { store } from '../store';
-import About from './About';
+// import About from './About';
 
 
 const mapStateToProps = state => {
@@ -61,7 +61,7 @@ class App extends React.Component {
                         currentUser={this.props.currentUser} />
                     <Switch>
                         <Route exact path="/" component={Home} />
-                        <Route path="/about" component={About} />
+                        {/* <Route path="/about" component={About} /> */}
                         <Route path="/login" component={Login} />
                         <Route path="/register" component={Register} />
                         <Route path="/editor/:slug" component={Editor} />
